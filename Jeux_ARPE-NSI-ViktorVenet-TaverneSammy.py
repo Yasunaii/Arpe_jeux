@@ -15,10 +15,10 @@ class color:
    RED = '\033[91m'
    SOULIGNE = '\033[4m'
    ITALIQUE = '\033[3m'
-
+ #test
 #On présente un peu le jeu en mettant dans le contexte le joueur
 
-hour = int(input("Ici seigneur. Je suis là. Mon seigneur, vous m'entendez ?! SEIGNEUR !!! Dîtes moi combien d'heures pensez-vous avoir dormi ?"))
+hour =int(input("Ici seigneur. Je suis là. Mon seigneur, vous m'entendez ?! SEIGNEUR !!! Dîtes moi combien d'heures pensez-vous avoir dormi ?"))
 print("Bienvenue, mon seigneur, vous venez en rélaité de vous réveiller d'un sommeil de ...")
 print(hour * 9,"heures.")
 user = input("Rassurez moi, vous n'êtes pas sonné, vous rappelez vous au moins de votre prénom. Dîtes-le moi.")
