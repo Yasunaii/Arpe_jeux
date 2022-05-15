@@ -1,10 +1,13 @@
+# On importe les librairies
 from math import*
 from random import*
 from time import*
 from colorama import*
 
 # On crée une bibliothèque des couleurs
-class color :
+
+
+class color:
     VIOLET = '\033[95m'
     CYAN = '\033[96m'
     CYAN_FONCE = '\033[36m'
@@ -17,6 +20,7 @@ class color :
     ITALIQUE = '\033[3m'
     END = '\033[0m'
 
+
 # On crée les Variables du joueur durant sa partie
 vie = 100
 
@@ -25,57 +29,88 @@ religion = 50
 peuple = 50
 economie = 50
 
-#On crée les conditions de fin de partie lié au variable ci-dessus.
-while (armee != 0 or 100) or (religion != 0 or 100) or (peuple != 0 or 100) or (economie != 0 or 100) or (vie != 0) :
-    if armee <= 0 :
-        print("Vous n'avez plus aucun soldat et les autres royaumes se disputent le vôtre.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+# exemplue d'écriture
+
+
+def hellow_world():
+    print(Fore.LIGHTBLUE_EX + "Hello World" + Fore.RESET)
+    print(Fore.BLUE + "Hello World" + Fore.RESET)
+    print(Fore.CYAN + "Hello World" + Fore.RESET)
+    print(Fore.RED + "Hello World" + Fore.RESET)
+    print(Fore.LIGHTGREEN_EX + "Hello World" + Fore.RESET)
+    print(Fore.GREEN + "Hello World" + Fore.RESET)
+    print(Fore.LIGHTYELLOW_EX + "Hello World" + Fore.RESET)
+    print(Fore.LIGHTMAGENTA_EX + "Hello World" + Fore.RESET)
+    print(Fore.MAGENTA + "Hello World" + Fore.RESET)
+    print(Fore.BLACK + "Hello World" + Fore.RESET)
+    print(Fore.LIGHTBLACK_EX + "Hello World" + Fore.RESET)
+    print(Fore.LIGHTWHITE_EX + "Hello World" + Fore.RESET)
+    print(Fore.WHITE + "Hello World" + Fore.RESET)
+hellow_world()
+
+
+# On crée les conditions de fin de partie lié au variable ci-dessus.
+while (armee != 0 or 100) or (religion != 0 or 100) or (peuple != 0 or 100) or (economie != 0 or 100) or (vie != 0):
+    if armee <= 0:
+        print(Fore.LIGHTBLUE_EX + "Vous n'avez plus aucun soldat et les autres royaumes se disputent le vôtre." + Fore.RESET)
+        print(Fore.RED + "FIN DE LA PARTIE" + Fore.RESET)
+        print(Fore.YELLOW,"\n Statistiques de la partie :", Fore.RESET, Fore.LIGHTYELLOW_EX , "\n Armée :", armee, "\n Religion :",religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n", Fore.RESET)
         break
-    elif armee >= 100 :
+    elif armee >= 100:
         print("L'armée vous chasse et prend votre place.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
-    elif religion <= 0 :
+    elif religion <= 0:
         print("Votre peuple ne croit plus en rien.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
-    elif religion >= 100 :
+    elif religion >= 100:
         print("L'évêque Antoine Malbonne vous chasse du pouvoir et prend votre place.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
-    elif peuple <= 0 :
+    elif peuple <= 0:
         print("Vous n'avez plus aucun habitant, vous perdez votre pouvoir.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
-    elif peuple >= 100 :
+    elif peuple >= 100:
         print("Le peuple décide d'une révolte et vous chasse.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
-    elif economie <= 0 :
+    elif economie <= 0:
         print("Le peuple prend le pouvoir suite à une Révolution.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
-    elif economie >= 100 :
+    elif economie >= 100:
         print("Vous mourrez étouffé suite à un buffet organisé.")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
-    elif vie <= 0 :
+    elif vie <= 0:
         print("Vous mourrez, fin de la partie !")
-        print("FIN DE LA PARTIE \n \n Vous avez survécu",tour,"tours et vous avez trouvé", objet," objets.")
-        print("\n Statistiques de la partie :\n Armée :", armee,"\n Religion :", religion,"\n Peuple :", peuple,"\n Economie :", economie,"\n")
+        print("FIN DE LA PARTIE")
+        print("\n Statistiques de la partie :\n Armée :", armee, "\n Religion :",
+              religion, "\n Peuple :", peuple, "\n Economie :", economie, "\n")
         break
+
+# Combat sous forme de pierre feuille ciseaux
 
 
 def Combat():
-    regle_Combat = input("Voulez vous connaitre les règles du jeu ? \n 1 : Connaitre les règle \n 2 : Ne pas connaitre les règle (c'est un peirre feuille ciseaux tu dois connaitre ahah) ")
+    regle_Combat = input(
+        "Voulez vous connaitre les règles du jeu ? \n 1 : Connaitre les règle \n 2 : Ne pas connaitre les règle (c'est un peirre feuille ciseaux tu dois connaitre ahah) ")
     if regle_Combat == "1":
         print("\n")
         print("Voici les règle du jeu :")
@@ -89,34 +124,39 @@ def Combat():
     pierre = 1
     feuille = 2
     ciseaux = 3
-    choix = randint(1, 3) 
+    choix = randint(1, 3)
     choix_joueur_C = int(input("Veuillez choisir entre \n 1 : La Pierre \n 2 : La Feuille \n 3 : Le Ciseaux \n"))
-    if choix_joueur_C  == 1:
+    if choix_joueur_C == 1:
         print("Vous avez choisi la pierre")
-    elif choix_joueur_C  == 2:
+    elif choix_joueur_C == 2:
         print("Vous avez choisi la feuille")
-    elif choix_joueur_C  == 3:
+    elif choix_joueur_C == 3:
         print("Vous avez choisi le ciseaux")
-    if choix_joueur_C  == choix:   
-        print("Egalité") 
-    elif choix_joueur_C  == 1 and choix == 2: 
+    if choix_joueur_C == choix:
+        print("Egalité")
+        print("Il n'y a aucune conséquence.")
+    elif choix_joueur_C == 1 and choix == 2:
         print("Vous avez perdu")
-    elif choix_joueur_C  == 1 and choix == 3: 
+    elif choix_joueur_C == 1 and choix == 3:
         print("Vous avez gagné")
-    elif choix_joueur_C  == 2 and choix == 1: 
+    elif choix_joueur_C == 2 and choix == 1:
         print("Vous avez gagné")
-    elif choix_joueur_C  == 2 and choix == 3: 
+    elif choix_joueur_C == 2 and choix == 3:
         print("Vous avez perdu")
-    elif choix_joueur_C  == 3 and choix == 1: 
+    elif choix_joueur_C == 3 and choix == 1:
         print("Vous avez perdu")
-    elif choix_joueur_C  == 3 and choix == 2: 
+    elif choix_joueur_C == 3 and choix == 2:
         print("Vous avez gagné")
     else:
         print("Vous n'avez pas respecter les règles. Veuillez recommencer")
         Combat()
 
+# Jeu du Nain Rouge
+
+
 def Nain_Rouge():
-    regle_Nain_Rouge = input("Voulez vous connaitre les règles du jeu ? \n 1 : Connaitre les règle \n 2: Ne pas connaitre les règle (Vous connaisez ? O_o) ")
+    regle_Nain_Rouge = input(
+        "Voulez vous connaitre les règles du jeu ? \n 1 : Connaitre les règle \n 2: Ne pas connaitre les règle (Vous connaisez ? O_o) ")
     if regle_Nain_Rouge == "1":
         print("\n")
         print("Voici les règle du jeu :")
@@ -130,7 +170,8 @@ def Nain_Rouge():
     de_total = de1 + de2
     Pair = 1
     Impair = 2
-    choix_joueur_N = input("Veuillez choisir entre \n 1 : Pair \n 2 : Impair \n")
+    choix_joueur_N = input(
+        "Veuillez choisir entre \n 1 : Pair \n 2 : Impair \n")
     if choix_joueur_N == "1":
         print("Vous avez choisi Pair")
     elif choix_joueur_N == "2":
@@ -138,29 +179,64 @@ def Nain_Rouge():
     else:
         print("Vous n'avez pas respecter les règles. Veuillez recommencer")
         Nain_Rouge()
-    if choix_joueur_N == "1" and de_total % 2 == 0: 
+    if choix_joueur_N == "1" and de_total % 2 == 0:
         print("Vous avez gagné")
-    elif choix_joueur_N == "2" and de_total % 2 != 0: 
+        Bonus_Nain_Rouge()
+    elif choix_joueur_N == "2" and de_total % 2 != 0:
         print("Vous avez gagné")
+        Bonus_Nain_Rouge()
     else:
         print("Vous avez perdu")
+        Malus_Nain_Rouge()
+
+# Récompense positive liée au nain rouge
 
 
-    
 def Bonus_Nain_Rouge():
-    # Système de récompense aléatoire
-    Récompense_aléatoire = randint(1, 6)
+    Récompense_aléatoire = randint(1, 7)
     if Récompense_aléatoire == 1:
         print("Le fou pour vous récompenser vous offre un pigeon mort.")
     elif Récompense_aléatoire == 2:
-        print("Le fou pour vous récompenser vous amène des clandestin a enrôler dans l'armée.")
+        print(
+            "Le fou pour vous récompenser vous amène des clandestin a enrôler dans l'armée.")
         Armee = Armee + 10
-    #Donc je sauvegarde ici sur github.
-    #Pour cette variable il faut applique les autre récompense en tout si on a en 6 aléatoirement c'est pas mal.
-    
+    elif Récompense_aléatoire == 3:
+        print("Le fou pour vous amène une troupe de comédien qui attire des habitants dans votre roayaume.")
+        peuple = peuple + 10
+    elif Récompense_aléatoire == 4:
+        print("Le fou pour vous remercier a demander au Pape de former des fidèle en votre nom.")
+        religion = religion + 10
+    elif Récompense_aléatoire == 5:
+        print("Le fou pour vous remercier vous offre un bâton de la mort.")
+    elif Récompense_aléatoire == 6:
+        print("Le fou commence a pleurer. Et s'enfuit avec un cri de dommage.")
+    elif Récompense_aléatoire == 7:
+        print("Le fou pour vous remercier vous offre un bout de diamant qu'il a trouver dans un trou.")
+        economie = economie + 10
 
-    
+# Récompense négative liée au nain rouge
 
 
+def Malus_Nain_Rouge():
+    Malus_aléatoire = randint(1, 7)
+    if Malus_aléatoire == 1:
+        print("Le fou pour vous récompenser d'avoir perdu vous donne un pigeon mort.")
+    elif Malus_aléatoire == 2:
+        print("Le fou pour vous récompenser d'avoir perdu chasse des clandestin de votre royaume.")
+        Armee = Armee - 10
+    elif Malus_aléatoire == 3:
+        print("Le fou pour vous récompenser d'avoir perdu vous donne une mauvaise troupe de comédien qui fous fuir les habitants du royaume.")
+        peuple = peuple - 10
+    elif Malus_aléatoire == 4:
+        print("Le fou pour vous récompenser d'avoir perdu a demander au Pape de renvoyer des fidèle en votre nom.")
+        religion = religion - 10
+    elif Malus_aléatoire == 5:
+        print("Le fou pour vous récompenser d'avoir perdu se moque de vous et s'enfuit avec votre tapis rouge.")
+    elif Malus_aléatoire == 6:
+        print("Le fou est pris d'une crise de joie et saute dans tout les sens.")
+    elif Malus_aléatoire == 7:
+        print("Le fou ayant gagner exige de vous que vous le payez.")
+        economie = economie - 10
 
-    
+
+# On début le jeu !
