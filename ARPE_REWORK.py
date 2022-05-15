@@ -4,23 +4,6 @@ from random import*
 from time import*
 from colorama import*
 
-# On crée une bibliothèque des couleurs
-
-
-class color:
-    VIOLET = '\033[95m'
-    CYAN = '\033[96m'
-    CYAN_FONCE = '\033[36m'
-    BLEU = '\033[94m'
-    VERT = '\033[92m'
-    JAUNE = '\033[93m'
-    ROURAGE = '\033[91m'
-    GRAS = '\033[1m'
-    UNDERLINE = '\033[4m'
-    ITALIQUE = '\033[3m'
-    END = '\033[0m'
-
-
 # On crée les Variables du joueur durant sa partie
 vie = 100
 
@@ -33,19 +16,35 @@ economie = 50
 
 
 def hellow_world():
-    print(Fore.LIGHTBLUE_EX + "Hello World" + Fore.RESET)
-    print(Fore.BLUE + "Hello World" + Fore.RESET)
-    print(Fore.CYAN + "Hello World" + Fore.RESET)
-    print(Fore.RED + "Hello World" + Fore.RESET)
-    print(Fore.LIGHTGREEN_EX + "Hello World" + Fore.RESET)
-    print(Fore.GREEN + "Hello World" + Fore.RESET)
-    print(Fore.LIGHTYELLOW_EX + "Hello World" + Fore.RESET)
-    print(Fore.LIGHTMAGENTA_EX + "Hello World" + Fore.RESET)
-    print(Fore.MAGENTA + "Hello World" + Fore.RESET)
-    print(Fore.BLACK + "Hello World" + Fore.RESET)
-    print(Fore.LIGHTBLACK_EX + "Hello World" + Fore.RESET)
-    print(Fore.LIGHTWHITE_EX + "Hello World" + Fore.RESET)
-    print(Fore.WHITE + "Hello World" + Fore.RESET)
+    print("Espace dev pour gérer les couleur de ARPE")
+
+    print("\n")
+    print(Fore.LIGHTBLUE_EX + "Cette couleur sera utiliser pour : Mettre en évidence les éléments important des phrase des PNJ " + Fore.RESET)
+    print(Fore.BLUE + "Cette couleur sera utiliser pour : Afficher des TITRE " + Fore.RESET)
+    print(Fore.CYAN + "Cette couleur sera utiliser pour : Mettre en évidence les choix que la joueur peut faire  " + Fore.RESET)
+
+    print("\n")
+    print(Fore.RED + "Cette couleur sera utiliser pour : Les Malus " + Fore.RESET)
+    
+    print("\n")
+    print(Fore.LIGHTGREEN_EX + "Cette couleur sera utiliser pour : Afficher les donnée statistique du joueur " + Fore.RESET)
+    print(Fore.GREEN + "Cette couleur sera utiliser pour : Les Bonus " + Fore.RESET)
+
+    print("\n")
+    print(Fore.LIGHTYELLOW_EX + "Cette couleur sera utiliser pour : Annoncer le rôle et le nom des PNJ : " + Fore.RESET)
+
+    print("\n")
+    print(Fore.LIGHTMAGENTA_EX + "Cette couleur sera utiliser pour : CIRCONSTANCE INDETERMINER " + Fore.RESET)
+    print(Fore.MAGENTA + "Cette couleur sera utiliser pour : CIRCONSTANCE INDETERMINER " + Fore.RESET)
+
+    print("\n")
+    print(Fore.BLACK + "Cette couleur sera utiliser pour : écriture normal adapté au constraste du fond.  " + Fore.RESET)
+    print(Fore.LIGHTBLACK_EX + "Cette couleur sera utiliser pour : écriture normal adapté au constraste du fond.   " + Fore.RESET)
+    print(Fore.LIGHTWHITE_EX + "Cette couleur sera utiliser pour : écriture normal adapté au constraste du fond.  " + Fore.RESET)
+    print(Fore.WHITE + "Cette couleur sera utiliser pour : écriture normal adapté au constraste du fond.  " + Fore.RESET)
+
+    print("\n")
+
 hellow_world()
 
 
