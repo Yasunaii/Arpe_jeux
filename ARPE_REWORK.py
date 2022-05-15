@@ -240,3 +240,11 @@ def Malus_Nain_Rouge():
 
 
 # On début le jeu !
+
+#OBJECTIF DE LA PROCHAINE SESSION DE CODE :
+# 1. Faire un système de récompense(Bonus/Malus) aléatoire pour le combat
+# 2. Appliquer les bonne couleur a chaque partie du code + prendre l'habitude de ne pas les oublier.
+# 3. Réfléchir a un système de sauvegarde pour le jeu. ( Reprendre a l'évènement près + garder les stats)
+# 4. Mettre en place les premier évènement du jeu.
+# 5. Toujours continuer a s'amuser a refaire se projet en mieux !
+
