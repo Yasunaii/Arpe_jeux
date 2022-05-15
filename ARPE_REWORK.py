@@ -6,11 +6,13 @@ from colorama import*
 
 # On crée les Variables du joueur durant sa partie
 vie = 100
-
 armee = 50
 religion = 50
 peuple = 50
 economie = 50
+
+# On crée les Variables des item du joueur
+Clairvoyance = 0
 
 # exemplue d'écriture
 
@@ -169,8 +171,7 @@ def Nain_Rouge():
     de_total = de1 + de2
     Pair = 1
     Impair = 2
-    choix_joueur_N = input(
-        "Veuillez choisir entre \n 1 : Pair \n 2 : Impair \n")
+    choix_joueur_N = input( "Veuillez choisir entre \n 1 : Pair \n 2 : Impair \n")
     if choix_joueur_N == "1":
         print("Vous avez choisi Pair")
     elif choix_joueur_N == "2":
