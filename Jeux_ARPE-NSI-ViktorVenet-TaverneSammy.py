@@ -30,7 +30,7 @@ elif start == 'non' :
     print("Vous avez été mis à éxécution par votre peuple...\n C'est dommage de se rendormir seulement après s'être réveillé.")
 else :
     print("Répondez-moi par oui ou par non, mon Seigneur, redîtes-moi tout !")
-    break
+
     
 
 #On crée les variables pour les objets et autres
@@ -576,7 +576,7 @@ while (armee != 0 or 100) or (religion != 0 or 100) or (peuple != 0 or 100) or (
         print(f"Le Général {Fore.YELLOW} Baldur Legrand {Style.RESET_ALL} : vos forteresses sont en ruine Seigneur", user,". Nous avons besoin d'en construire de nouvelles.")
         choix29 = input(f"Voulez-vous construire de nouvelles forteresses ?")
         if choix29 == 'oui':
-            print(f"Vous décidez de construire une nouvelle forteresse, votre armée vous remercie : {Fore.GREEN} +10 000 {Style.RESET-ALL} . Cependant, ces protection vous ont coûté des millions de Yuan, soit près de {Fore.RED} 10 000 {Style.RESET_ALL} francs.")
+            print(f"Vous décidez de construire une nouvelle forteresse, votre armée vous remercie : {Fore.GREEN} +10 000 {Style.RESETALL} . Cependant, ces protection vous ont coûté des millions de Yuan, soit près de {Fore.RED} 10 000 {Style.RESET_ALL} francs.")
             economie = economie - 10
             armee = armee + 10
         elif choix29 == 'non' :
@@ -858,7 +858,7 @@ while (armee != 0 or 100) or (religion != 0 or 100) or (peuple != 0 or 100) or (
         if choix53 == 'oui' :
             print(f"Le {Fore.YELLOW} Monstre {Style.RESET_ALL} : Grrrrh !")
             combatmonstre()
-        elif choix == 'non' :
+        elif choix53 == 'non' :
             print(f"Vous décidez de laissez ce monstre inconnu.")
         
         

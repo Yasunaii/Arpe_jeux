@@ -1,0 +1,69 @@
+from math import*
+from random import*
+from time import*
+from colorama import*
+
+# On crée une bibliothèque des couleurs
+class color :
+    VIOLET = '\033[95m'
+    CYAN = '\033[96m'
+    CYAN_FONCE = '\033[36m'
+    BLEU = '\033[94m'
+    VERT = '\033[92m'
+    JAUNE = '\033[93m'
+    ROURAGE = '\033[91m'
+    GRAS = '\033[1m'
+    UNDERLINE = '\033[4m'
+    ITALIQUE = '\033[3m'
+    END = '\033[0m'
+
+# On crée les Variables du joueur durant sa partie
+vie = 100
+Armee = 50000 # On a 50000 soldats au départ
+Religion = 50000 # On a 50000 adeptes dans le royaume au départ.
+Population = 50000  # On ajoute une population de 50000 au départ.
+Economie = 50000  # Le Roayume démarre avec 50000 Francs d'or.
+
+
+def pierrefeuilleciseaux():
+    regle = input("Voulez vous connaitre les règles du jeu ? \n 1 : Connaitre les règle \n 2: Ne pas connaitre les règle (c'est un peirre feuille ciseaux tu dois connaitre ahah) ")
+    if regle == "1":
+        print("\n")
+        print("Voici les règle du jeu :")
+        print("Le jeu se joue entre vous et votre ennemis.")
+        print("Pour gagner il faut avoir un signe plus fort que celui de votre ennemis. ")
+        print("La pierre bat le ciseaux.")
+        print("La feuille bat la pierre.")
+        print("Le ciseaux bat la feuille.")
+        print("Si vous et votre ennemis ont le même signe, il y a égalité.")
+        print("\n")
+    pierre = 1
+    feuille = 2
+    ciseaux = 3
+    choix = randint(1, 3) 
+    choix_joueur = int(input("Veuillez choisir entre \n 1 : La Pierre \n 2 : La Feuille \n 3 : Le Ciseaux \n"))
+    if choix_joueur == 1:
+        print("Vous avez choisi la pierre")
+    elif choix_joueur == 2:
+        print("Vous avez choisi la feuille")
+    elif choix_joueur == 3:
+        print("Vous avez choisi le ciseaux")
+    if choix_joueur == choix:   
+        print("Egalité") 
+    elif choix_joueur == 1 and choix == 2: 
+        print("Vous avez perdu")
+    elif choix_joueur == 1 and choix == 3: 
+        print("Vous avez gagné")
+    elif choix_joueur == 2 and choix == 1: 
+        print("Vous avez gagné")
+    elif choix_joueur == 2 and choix == 3: 
+        print("Vous avez perdu")
+    elif choix_joueur == 3 and choix == 1: 
+        print("Vous avez perdu")
+    elif choix_joueur == 3 and choix == 2: 
+        print("Vous avez gagné")
+    else:
+        print("Vous n'avez pas respecter les règles. Veuillez recommencer")
+        pierrefeuilleciseaux()
+
+
